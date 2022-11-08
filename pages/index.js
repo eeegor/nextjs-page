@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Layout } from "../components/Layout";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Simple Next.js + Tailwind demo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Layout>
         <section className="py-12">
           <div className="container mx-auto px-4">
             <h1 className="text-gray-900 text-4xl font-extrabold">Hello</h1>
@@ -18,7 +19,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-      </main>
+      </Layout>
     </div>
   );
 }
