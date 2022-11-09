@@ -12,12 +12,18 @@ export default function Home() {
       </Head>
       <Layout>
         <section className="py-12">
-          <div className="container mx-auto px-4">
-            <h1 className="text-gray-900 text-4xl font-extrabold">Sorry!</h1>
+          <div className="container mx-auto px-4 py-12">
+            <h1 className="text-gray-900 text-4xl font-extrabold mb-4">
+              Sorry!
+            </h1>
             <p className="text-gray-700">
               We could not find the page you are looking for...
             </p>
-            <Link href="/">Go home</Link>
+            <p className="mt-4">
+              <Link href="/">
+                <button className="px-4 py-2 rounded-md bg-green-400 hover:bg-green-600 transition-colors">Go home</button>
+              </Link>
+            </p>
           </div>
         </section>
       </Layout>
